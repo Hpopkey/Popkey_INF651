@@ -41,7 +41,7 @@ console.log("OR operator: " + (firstBool || secondBool));  // Running logical op
 console.log("NOT operator: " + (!firstBool));
 console.log("Second NOT operator: " + (!secondBool));
 
-let firstName = "Hunter";
+let firstName = "Hunter"; // Variables for step 7
 let lastName = "Popkey";
 
-console.log(`Hello ${firstName + " " + lastName } how are you?`);
+console.log(`Hello ${firstName + " " + lastName} how are you?`);  // Greeting message with literals
