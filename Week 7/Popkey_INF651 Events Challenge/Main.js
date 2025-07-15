@@ -1,22 +1,22 @@
 let output = document.getElementById("coordinates")
 let box = document.getElementById("mouseTracker");
-let submit = document.getElementById('submitButton').addEventListener('click', handleSubmit);
-let divOutput = document.getElementById('outputDiv');
+let submit = document.getElementById("submitButton").addEventListener("click", handleSubmit);
+let divOutput = document.getElementById("outputDiv");
 
 function handleSubmit() {
-    let itemInput = document.getElementById('nameInput').value.trim();    //Form submission function
+    let itemInput = document.getElementById("nameInput").value.trim();    //Form submission function
 
     if (itemInput === '') {
         divOutput.textContent = "Error: Please enter a name.";
-        divOutput.style.backgroundColor = 'red';
+        divOutput.style.backgroundColor = "red";
     } else {
         divOutput.textContent = "Welcome, " + itemInput + "!";
         divOutput.style.backgroundColor = "green";
     }
 }
 
-document.getElementById('nameInput').addEventListener('keypress', function(event) {  // Keyboard event
-    if (event.key === 'Enter' ) {
+document.getElementById("nameInput").addEventListener("keypress", function(event) {  // Keyboard event
+    if (event.key === "Enter" ) {
         handleSubmit();
     }
 });
